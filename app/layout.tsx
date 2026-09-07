@@ -6,3 +6,5 @@ export default function RootLayout({children}:Readonly<{children:React.ReactNode
 import './extras.css';
 
 import './management.css';
+
+import './workspace-v3.css';
