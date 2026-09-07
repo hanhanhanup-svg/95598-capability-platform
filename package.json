@@ -10,7 +10,8 @@
     "build": "node scripts/build.mjs",
     "start": "vinext start",
     "lint": "oxlint",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "check": "node node_modules/typescript/bin/tsc --noEmit && node scripts/check-management.cjs && node scripts/check-render.cjs && node scripts/check-foundation.mjs"
   },
   "dependencies": {
     "react": "19.2.6",
