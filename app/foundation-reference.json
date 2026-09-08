@@ -1,0 +1,2038 @@
+{
+  "edition": "REF-2026-09-08",
+  "title": "附件参考基础数据",
+  "sources": [
+    {
+      "id": "SRC-RANK",
+      "name": "国家电网有限公司客户服务中心客服专员岗位职级管理办法（修订稿）-2025.11.10.pdf",
+      "nature": "修订稿，未确认生效",
+      "locator": "25页；本原型页码与印刷页码一致",
+      "sha256": "593a2cc715d13579238e684ff11f2e015de5c703c6481991b509c7ed80886072"
+    },
+    {
+      "id": "SRC-KNOWLEDGE",
+      "name": "新型知识库选型建设技术方案 0814.docx",
+      "nature": "技术方案参考",
+      "locator": "知识分类表、95598现状、知识处理与追溯章节；未采用技术选型及效果数字",
+      "sha256": "19f11dea855e51609b25d99db260e0f24e3fc5e4f005258fccba0f7d5ee9d0b3"
+    },
+    {
+      "id": "SRC-WALL",
+      "name": "用户提供的95598岗位能力墙图片",
+      "nature": "能力框架示意",
+      "locator": "统一星级定义、七个能力族、分级行为要求、人员对照与成长",
+      "sha256": "a9ed63ed05dffdebe37e9c07747b3c359df0adbe59f85f237396364637268e1d"
+    }
+  ],
+  "sequences": [
+    {
+      "id": "SEQ-01",
+      "name": "生产序列"
+    },
+    {
+      "id": "SEQ-02",
+      "name": "支撑序列"
+    },
+    {
+      "id": "SEQ-03",
+      "name": "运营序列"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "JOB-01",
+      "name": "电话服务专员",
+      "sequenceId": "SEQ-01",
+      "rankScheme": "服务星级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-02",
+      "name": "电子服务专员",
+      "sequenceId": "SEQ-01",
+      "rankScheme": "服务星级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-03",
+      "name": "智能服务专员",
+      "sequenceId": "SEQ-01",
+      "rankScheme": "智能星级（待确认）",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-04",
+      "name": "电话服务班长",
+      "sequenceId": "SEQ-01",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-05",
+      "name": "电子服务班长",
+      "sequenceId": "SEQ-01",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-06",
+      "name": "智能服务班长",
+      "sequenceId": "SEQ-01",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-07",
+      "name": "首席客服专员",
+      "sequenceId": "SEQ-01",
+      "rankScheme": "首席聘任",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-08",
+      "name": "系统维护员",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-09",
+      "name": "安全员",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-10",
+      "name": "客户体验师",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-11",
+      "name": "服务监督员",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-12",
+      "name": "大数据应用专员",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-13",
+      "name": "质检员",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-14",
+      "name": "审单员",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-15",
+      "name": "知识编译员",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-16",
+      "name": "重要服务事项专员",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-17",
+      "name": "运营调控专员",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-18",
+      "name": "内训师",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-19",
+      "name": "业务分析师",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-20",
+      "name": "智能服务场景设计师",
+      "sequenceId": "SEQ-02",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-21",
+      "name": "安全主管",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-22",
+      "name": "综合主管",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-23",
+      "name": "话务预测排班主管",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-24",
+      "name": "知识编译主管",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-25",
+      "name": "质检主管",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-26",
+      "name": "内训主管",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-27",
+      "name": "业务分析主管",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-28",
+      "name": "服务联络主管",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-29",
+      "name": "业务运营主管",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    },
+    {
+      "id": "JOB-30",
+      "name": "客服经理",
+      "sequenceId": "SEQ-03",
+      "rankScheme": "岗位职级",
+      "sourceId": "SRC-RANK",
+      "locator": "第2—4页，第8—9条",
+      "status": "修订稿参考"
+    }
+  ],
+  "profiles": [
+    {
+      "roleId": "ROLE-01",
+      "jobId": "JOB-01",
+      "focus": "综合业务",
+      "coverage": "代表性任务样本，未覆盖完整岗位资格；二星及以上服务专员全业务技能须另行核验。"
+    },
+    {
+      "roleId": "ROLE-02",
+      "jobId": "JOB-01",
+      "focus": "报修查询",
+      "coverage": "代表性任务样本，未覆盖完整岗位资格；二星及以上服务专员全业务技能须另行核验。"
+    },
+    {
+      "roleId": "ROLE-03",
+      "jobId": "JOB-02",
+      "focus": "投诉举报",
+      "coverage": "代表性任务样本，未覆盖完整岗位资格；二星及以上服务专员全业务技能须另行核验。"
+    },
+    {
+      "roleId": "ROLE-04",
+      "jobId": "JOB-13",
+      "focus": "服务质量复核",
+      "coverage": "代表性任务样本，未覆盖完整岗位资格；采用一级至三级职级，相关资格需另行核验。"
+    },
+    {
+      "roleId": "ROLE-05",
+      "jobId": "JOB-15",
+      "focus": "知识采编与版本核验",
+      "coverage": "代表性任务样本，未覆盖完整岗位资格；采用一级至三级职级，相关资格需另行核验。"
+    },
+    {
+      "roleId": "ROLE-06",
+      "jobId": "JOB-04",
+      "focus": "班组运营与辅导",
+      "coverage": "代表性任务样本，未覆盖完整岗位资格；采用一级至三级职级，相关资格需另行核验。"
+    }
+  ],
+  "ranks": [
+    {
+      "personId": "DEMO-001",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 2,
+      "label": "二星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-002",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 2,
+      "label": "二星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-003",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 3,
+      "label": "三星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-004",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 4,
+      "label": "四星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-005",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 2,
+      "label": "二星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-006",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 4,
+      "label": "四星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-007",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 3,
+      "label": "三星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-008",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 5,
+      "label": "五星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-009",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 2,
+      "label": "二星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-010",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 3,
+      "label": "三星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-011",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 4,
+      "label": "四星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-012",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 3,
+      "label": "三星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-013",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 2,
+      "label": "二星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-014",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 3,
+      "label": "三星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-015",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 3,
+      "label": "三星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-016",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 4,
+      "label": "四星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-017",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 2,
+      "label": "二星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-018",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 4,
+      "label": "四星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-019",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 3,
+      "label": "三星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-020",
+      "jobId": "JOB-01",
+      "scheme": "服务星级",
+      "value": 5,
+      "label": "五星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-021",
+      "jobId": "JOB-02",
+      "scheme": "服务星级",
+      "value": 4,
+      "label": "四星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-022",
+      "jobId": "JOB-02",
+      "scheme": "服务星级",
+      "value": 3,
+      "label": "三星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-023",
+      "jobId": "JOB-02",
+      "scheme": "服务星级",
+      "value": 3,
+      "label": "三星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-024",
+      "jobId": "JOB-02",
+      "scheme": "服务星级",
+      "value": 4,
+      "label": "四星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-025",
+      "jobId": "JOB-02",
+      "scheme": "服务星级",
+      "value": 2,
+      "label": "二星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-026",
+      "jobId": "JOB-02",
+      "scheme": "服务星级",
+      "value": 4,
+      "label": "四星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-027",
+      "jobId": "JOB-13",
+      "scheme": "岗位职级",
+      "value": 2,
+      "label": "二级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-028",
+      "jobId": "JOB-13",
+      "scheme": "岗位职级",
+      "value": 2,
+      "label": "二级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-029",
+      "jobId": "JOB-13",
+      "scheme": "岗位职级",
+      "value": 2,
+      "label": "二级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-030",
+      "jobId": "JOB-13",
+      "scheme": "岗位职级",
+      "value": 3,
+      "label": "三级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-031",
+      "jobId": "JOB-13",
+      "scheme": "岗位职级",
+      "value": 1,
+      "label": "一级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-032",
+      "jobId": "JOB-15",
+      "scheme": "岗位职级",
+      "value": 1,
+      "label": "一级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-033",
+      "jobId": "JOB-15",
+      "scheme": "岗位职级",
+      "value": 2,
+      "label": "二级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-034",
+      "jobId": "JOB-15",
+      "scheme": "岗位职级",
+      "value": 2,
+      "label": "二级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-035",
+      "jobId": "JOB-15",
+      "scheme": "岗位职级",
+      "value": 3,
+      "label": "三级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-036",
+      "jobId": "JOB-04",
+      "scheme": "岗位职级",
+      "value": 1,
+      "label": "一级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-037",
+      "jobId": "JOB-04",
+      "scheme": "岗位职级",
+      "value": 2,
+      "label": "二级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-038",
+      "jobId": "JOB-04",
+      "scheme": "岗位职级",
+      "value": 2,
+      "label": "二级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-039",
+      "jobId": "JOB-04",
+      "scheme": "岗位职级",
+      "value": 3,
+      "label": "三级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-040",
+      "jobId": "JOB-04",
+      "scheme": "岗位职级",
+      "value": 1,
+      "label": "一级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    }
+  ],
+  "starDefinitions": [
+    {
+      "star": 1,
+      "name": "基础业务独立处理",
+      "sourceId": "SRC-WALL"
+    },
+    {
+      "star": 2,
+      "name": "常规业务及一般异常",
+      "sourceId": "SRC-WALL"
+    },
+    {
+      "star": 3,
+      "name": "核心业务及一般复杂问题",
+      "sourceId": "SRC-WALL"
+    },
+    {
+      "star": 4,
+      "name": "本专业复杂诉求",
+      "sourceId": "SRC-WALL"
+    },
+    {
+      "star": 5,
+      "name": "重大疑难研判与处理",
+      "sourceId": "SRC-WALL"
+    }
+  ],
+  "rankSchemes": [
+    {
+      "name": "服务星级",
+      "levels": [
+        "无星",
+        "一星",
+        "二星",
+        "三星",
+        "四星",
+        "五星",
+        "六星"
+      ],
+      "sourceId": "SRC-RANK",
+      "locator": "第3—4页"
+    },
+    {
+      "name": "智能星级（待确认）",
+      "levels": [
+        "一星",
+        "二星",
+        "三星",
+        "四星",
+        "五星",
+        "六星"
+      ],
+      "sourceId": "SRC-RANK",
+      "locator": "第3、5页；数量表述冲突待确认"
+    },
+    {
+      "name": "岗位职级",
+      "levels": [
+        "一级",
+        "二级",
+        "三级"
+      ],
+      "sourceId": "SRC-RANK",
+      "locator": "第4页"
+    },
+    {
+      "name": "首席聘任",
+      "levels": [
+        "首席客服专员"
+      ],
+      "sourceId": "SRC-RANK",
+      "locator": "第3—4页；一般2年聘期，资格条款冲突待确认"
+    }
+  ],
+  "behaviorExamples": [
+    {
+      "roleId": "ROLE-01",
+      "star": 3,
+      "capabilityId": "CAP-02",
+      "behavior": "结合资料说明依据，回应一般复杂追问。",
+      "sourceId": "SRC-WALL"
+    },
+    {
+      "roleId": "ROLE-01",
+      "star": 4,
+      "capabilityId": "CAP-02",
+      "behavior": "解释复杂诉求的适用依据，说明处理方案。",
+      "sourceId": "SRC-WALL"
+    },
+    {
+      "roleId": "ROLE-03",
+      "star": 3,
+      "capabilityId": "CAP-02",
+      "behavior": "形成依据完整、表达清晰的书面说明。",
+      "sourceId": "SRC-WALL"
+    }
+  ],
+  "rules": [
+    {
+      "title": "适用范围",
+      "text": "南、北分中心劳务派遣制客服专员，协理员、驾驶员等除外。",
+      "locator": "第1页，第3条",
+      "sourceId": "SRC-RANK",
+      "status": "修订稿参考，未启用为自动规则"
+    },
+    {
+      "title": "全业务技能",
+      "text": "二星及以上服务专员需具备报修查询、综合业务、投诉举报等全业务技能。代表性场景达标不能代替全业务核验。",
+      "locator": "第3页，第9条",
+      "sourceId": "SRC-RANK",
+      "status": "修订稿参考，未启用为自动规则"
+    },
+    {
+      "title": "服务专员成绩",
+      "text": "绩效50%＋业务调考15%＋业务实操35%；调考分数线由分中心划定且不得低于60分。",
+      "locator": "第7—8页，第21条",
+      "sourceId": "SRC-RANK",
+      "status": "修订稿参考，未启用为自动规则"
+    },
+    {
+      "title": "班长成绩",
+      "text": "班组评价80%＋个人能力20%；话务量条件由分中心制定。",
+      "locator": "第9页，第22条",
+      "sourceId": "SRC-RANK",
+      "status": "修订稿参考，未启用为自动规则"
+    },
+    {
+      "title": "支撑、运营成绩",
+      "text": "业务调考／评级考试25%＋绩效50%＋述职评价25%。",
+      "locator": "第9—10页，第23条",
+      "sourceId": "SRC-RANK",
+      "status": "修订稿参考，未启用为自动规则"
+    },
+    {
+      "title": "职级比例",
+      "text": "服务专员一星与二星合计≤30%，三星≥40%，四星≤15%，五星≤10%，六星≤5%。一级≥40%、二级≤35%、三级≤25%。分母为中心下达的各序列定员人数，不使用本原型40人直接测算。",
+      "locator": "第10页第25条、第16页附表",
+      "sourceId": "SRC-RANK",
+      "status": "修订稿参考，未启用为自动规则"
+    },
+    {
+      "title": "公示与复核",
+      "text": "公示3个工作日；书面申请复核后，人资3个工作日内答复是否受理，5个工作日内组织复核并书面反馈。",
+      "locator": "第11页，第28条",
+      "sourceId": "SRC-RANK",
+      "status": "修订稿参考，未启用为自动规则"
+    }
+  ],
+  "developmentPaths": [
+    {
+      "from": "三星及以上服务专员",
+      "to": "一级班长／一级支撑",
+      "condition": "相应岗位满0.5年，参加竞聘并通过考核；一级班长另有支撑序列路径。",
+      "locator": "第5、19—20页"
+    },
+    {
+      "from": "四星及以上服务专员／班长／支撑",
+      "to": "一级运营主管",
+      "condition": "四星服务专员或班长满1年，或支撑岗位满1.5年，并通过相应考核。",
+      "locator": "第5、20页"
+    },
+    {
+      "from": "一星服务专员",
+      "to": "跨级申报三星",
+      "condition": "入职两年内，一星后各月绩效B及以上且评价周期连续6个月A；连续两次未成功停止申请；须本人申请、部门申报与人资审核。",
+      "locator": "第5页，第14条"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "ISSUE-1",
+      "title": "智能服务等级数量",
+      "detail": "第3页称“五个等级”却列一至六星，第5页再次列六档。",
+      "locator": "第3、5页",
+      "sourceId": "SRC-RANK",
+      "status": "待业务确认"
+    },
+    {
+      "id": "ISSUE-2",
+      "title": "首席申报通道",
+      "detail": "正文六星可竞聘，第17页图为五星，第19页为五星满2年或六星满1年。",
+      "locator": "第3—4、17、19页",
+      "sourceId": "SRC-RANK",
+      "status": "待业务确认"
+    },
+    {
+      "id": "ISSUE-3",
+      "title": "六星考核名称",
+      "detail": "六星晋升行写“通过五星评级考核”，保留原文待确认。",
+      "locator": "第19页",
+      "sourceId": "SRC-RANK",
+      "status": "待业务确认"
+    },
+    {
+      "id": "ISSUE-4",
+      "title": "智能一星时间",
+      "detail": "参考晋升时间0.5年与申报要求电话／电子服务满1年不一致。",
+      "locator": "第18—19页",
+      "sourceId": "SRC-RANK",
+      "status": "待业务确认"
+    },
+    {
+      "id": "ISSUE-5",
+      "title": "客服经理通道",
+      "detail": "正文包含六星满1年，附表未列此路径。",
+      "locator": "第5、20页",
+      "sourceId": "SRC-RANK",
+      "status": "待业务确认"
+    },
+    {
+      "id": "ISSUE-6",
+      "title": "岗位名称差异",
+      "detail": "正文“综合主管、话务预测排班主管”与时间表名称不完全一致；目录采用正文。",
+      "locator": "第3、18页",
+      "sourceId": "SRC-RANK",
+      "status": "待业务确认"
+    },
+    {
+      "id": "ISSUE-7",
+      "title": "培训积分折算",
+      "detail": "积分折算条款未说明如何进入总分，不自行分配权重。",
+      "locator": "第7—9页",
+      "sourceId": "SRC-RANK",
+      "status": "待业务确认"
+    },
+    {
+      "id": "ISSUE-8",
+      "title": "知识数量口径",
+      "detail": "方案两处将标问与标答数量相互颠倒；未导入原型统计。",
+      "locator": "DOCX原95598知识库现状两段",
+      "sourceId": "SRC-KNOWLEDGE",
+      "status": "待业务确认"
+    }
+  ],
+  "knowledge": [
+    {
+      "id": "KN-FAQ-001",
+      "type": "FAQ问答对",
+      "title": "电费账单构成解释问答",
+      "scenarioIds": [
+        "SCN-01"
+      ],
+      "taskIds": [
+        "TASK-01",
+        "TASK-02"
+      ],
+      "capabilityIds": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-13",
+        "CAP-14",
+        "CAP-03",
+        "CAP-19",
+        "CAP-20",
+        "CAP-21"
+      ],
+      "roleIds": [
+        "ROLE-01",
+        "ROLE-05"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-001",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "content": "电费账单构成解释问答：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-FAQ-002",
+      "type": "FAQ问答对",
+      "title": "停电进度查询与反馈问答",
+      "scenarioIds": [
+        "SCN-03"
+      ],
+      "taskIds": [
+        "TASK-07",
+        "TASK-08",
+        "TASK-09"
+      ],
+      "capabilityIds": [
+        "CAP-01",
+        "CAP-04",
+        "CAP-13",
+        "CAP-14",
+        "CAP-19",
+        "CAP-20",
+        "CAP-21",
+        "CAP-05",
+        "CAP-06",
+        "CAP-17",
+        "CAP-18",
+        "CAP-22",
+        "CAP-07",
+        "CAP-15",
+        "CAP-16"
+      ],
+      "roleIds": [
+        "ROLE-02"
+      ],
+      "version": "K2.0",
+      "previousVersion": "K1.0",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-002",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "content": "停电进度查询与反馈问答：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K2.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "待同步",
+          "syncedAt": "2026-08-01 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-01",
+          "effectiveUntil": "2026-08-19",
+          "status": "已被替代"
+        },
+        {
+          "version": "K2.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-DOC-001",
+      "type": "文档类",
+      "title": "电费电价口径适用性核对指引",
+      "scenarioIds": [
+        "SCN-01"
+      ],
+      "taskIds": [
+        "TASK-01",
+        "TASK-02"
+      ],
+      "capabilityIds": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-13",
+        "CAP-14",
+        "CAP-03",
+        "CAP-19",
+        "CAP-20",
+        "CAP-21"
+      ],
+      "roleIds": [
+        "ROLE-01",
+        "ROLE-05"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-003",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "content": "电费电价口径适用性核对指引：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-DOC-002",
+      "type": "文档类",
+      "title": "投诉升级交接资料核对指引",
+      "scenarioIds": [
+        "SCN-05"
+      ],
+      "taskIds": [
+        "TASK-13",
+        "TASK-14",
+        "TASK-15"
+      ],
+      "capabilityIds": [
+        "CAP-01",
+        "CAP-03",
+        "CAP-02",
+        "CAP-13",
+        "CAP-14",
+        "CAP-19",
+        "CAP-20",
+        "CAP-21",
+        "CAP-06",
+        "CAP-17",
+        "CAP-18",
+        "CAP-22",
+        "CAP-05",
+        "CAP-07",
+        "CAP-15",
+        "CAP-16"
+      ],
+      "roleIds": [
+        "ROLE-03"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-004",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "content": "投诉升级交接资料核对指引：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-IMG-001",
+      "type": "图片类",
+      "title": "故障范围初判流程示意",
+      "scenarioIds": [
+        "SCN-04"
+      ],
+      "taskIds": [
+        "TASK-10",
+        "TASK-11",
+        "TASK-12"
+      ],
+      "capabilityIds": [
+        "CAP-01",
+        "CAP-04",
+        "CAP-13",
+        "CAP-14",
+        "CAP-19",
+        "CAP-20",
+        "CAP-21",
+        "CAP-06",
+        "CAP-17",
+        "CAP-18",
+        "CAP-22",
+        "CAP-03",
+        "CAP-07",
+        "CAP-15",
+        "CAP-16",
+        "CAP-02"
+      ],
+      "roleIds": [
+        "ROLE-02"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-005",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "content": "故障范围初判流程示意：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-IMG-002",
+      "type": "图片类",
+      "title": "知识版本差异核对操作图",
+      "scenarioIds": [
+        "SCN-07"
+      ],
+      "taskIds": [
+        "TASK-19",
+        "TASK-20",
+        "TASK-21"
+      ],
+      "capabilityIds": [
+        "CAP-02",
+        "CAP-09",
+        "CAP-13",
+        "CAP-14",
+        "CAP-18",
+        "CAP-20",
+        "CAP-21",
+        "CAP-08",
+        "CAP-17",
+        "CAP-10"
+      ],
+      "roleIds": [
+        "ROLE-05"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-006",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "content": "知识版本差异核对操作图：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-TAB-001",
+      "type": "表格类",
+      "title": "价目与参数口径字段示例",
+      "scenarioIds": [
+        "SCN-01"
+      ],
+      "taskIds": [
+        "TASK-01",
+        "TASK-02"
+      ],
+      "capabilityIds": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-13",
+        "CAP-14",
+        "CAP-03",
+        "CAP-19",
+        "CAP-20",
+        "CAP-21"
+      ],
+      "roleIds": [
+        "ROLE-01",
+        "ROLE-05"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-007",
+      "sourceLocator": "工作表1 / 第2—6行（演示定位）",
+      "content": "价目与参数口径字段示例：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-TAB-002",
+      "type": "表格类",
+      "title": "渠道知识版本对照台账",
+      "scenarioIds": [
+        "SCN-07"
+      ],
+      "taskIds": [
+        "TASK-21"
+      ],
+      "capabilityIds": [
+        "CAP-09",
+        "CAP-10",
+        "CAP-13",
+        "CAP-14",
+        "CAP-17",
+        "CAP-18",
+        "CAP-20",
+        "CAP-21"
+      ],
+      "roleIds": [
+        "ROLE-05"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-008",
+      "sourceLocator": "工作表1 / 第2—6行（演示定位）",
+      "content": "渠道知识版本对照台账：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-AV-001",
+      "type": "音视频类",
+      "title": "客户情绪回应话术示例",
+      "scenarioIds": [
+        "SCN-05"
+      ],
+      "taskIds": [
+        "TASK-13",
+        "TASK-14"
+      ],
+      "capabilityIds": [
+        "CAP-01",
+        "CAP-03",
+        "CAP-02",
+        "CAP-13",
+        "CAP-14",
+        "CAP-19",
+        "CAP-20",
+        "CAP-21",
+        "CAP-06",
+        "CAP-17",
+        "CAP-18",
+        "CAP-22"
+      ],
+      "roleIds": [
+        "ROLE-03"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-009",
+      "sourceLocator": "00:20—01:40（演示定位）",
+      "content": "客户情绪回应话术示例：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-AV-002",
+      "type": "音视频类",
+      "title": "账单解释情境训练演示",
+      "scenarioIds": [
+        "SCN-01"
+      ],
+      "taskIds": [
+        "TASK-02"
+      ],
+      "capabilityIds": [
+        "CAP-02",
+        "CAP-03",
+        "CAP-13",
+        "CAP-14",
+        "CAP-19",
+        "CAP-20",
+        "CAP-21"
+      ],
+      "roleIds": [
+        "ROLE-01",
+        "ROLE-05"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-010",
+      "sourceLocator": "00:20—01:40（演示定位）",
+      "content": "账单解释情境训练演示：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-STR-001",
+      "type": "结构化知识",
+      "title": "投诉升级节点与岗位责任示例",
+      "scenarioIds": [
+        "SCN-05"
+      ],
+      "taskIds": [
+        "TASK-14",
+        "TASK-15"
+      ],
+      "capabilityIds": [
+        "CAP-03",
+        "CAP-06",
+        "CAP-13",
+        "CAP-17",
+        "CAP-18",
+        "CAP-22",
+        "CAP-05",
+        "CAP-07",
+        "CAP-02",
+        "CAP-15",
+        "CAP-16"
+      ],
+      "roleIds": [
+        "ROLE-03"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-011",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "content": "投诉升级节点与岗位责任示例：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    },
+    {
+      "id": "KN-STR-002",
+      "type": "结构化知识",
+      "title": "知识发布与反馈处理规则示例",
+      "scenarioIds": [
+        "SCN-07"
+      ],
+      "taskIds": [
+        "TASK-19",
+        "TASK-20",
+        "TASK-21"
+      ],
+      "capabilityIds": [
+        "CAP-02",
+        "CAP-09",
+        "CAP-13",
+        "CAP-14",
+        "CAP-18",
+        "CAP-20",
+        "CAP-21",
+        "CAP-08",
+        "CAP-17",
+        "CAP-10"
+      ],
+      "roleIds": [
+        "ROLE-05"
+      ],
+      "version": "K1.0",
+      "previousVersion": "",
+      "effectiveFrom": "2026-08-20",
+      "effectiveUntil": "2026-12-31",
+      "publicationStatus": "已发布",
+      "qualityStatus": "通过",
+      "owner": "知识编译专业（模拟）",
+      "region": "示例地区，使用前核对实际适用范围",
+      "sourceDocument": "DEMO-KNOWLEDGE-012",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "content": "知识发布与反馈处理规则示例：核对来源、地区、时点和版本后使用。此处仅提供训练要点，不包含真实政策数值或可用于生产的服务答复。",
+      "channels": [
+        {
+          "channel": "坐席知识端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        },
+        {
+          "channel": "智能客服端",
+          "version": "K1.0",
+          "syncStatus": "已同步",
+          "syncedAt": "2026-08-20 09:00"
+        }
+      ],
+      "sourceId": "SRC-KNOWLEDGE",
+      "isSynthetic": true,
+      "versions": [
+        {
+          "version": "K1.0",
+          "effectiveFrom": "2026-08-20",
+          "effectiveUntil": "2026-12-31",
+          "status": "已发布"
+        }
+      ]
+    }
+  ],
+  "knowledgeTypes": [
+    "FAQ问答对",
+    "文档类",
+    "图片类",
+    "表格类",
+    "音视频类",
+    "结构化知识"
+  ],
+  "knowledgeFeedback": [
+    {
+      "id": "KFB-001",
+      "knowledgeId": "KN-FAQ-002",
+      "version": "K2.0",
+      "category": "渠道版本不一致",
+      "description": "坐席知识端已使用K2.0，智能客服端仍为K1.0，先核对同步批次和发布记录。",
+      "owner": "DEMO-035",
+      "status": "待办理",
+      "actionId": "ACT-03",
+      "diagnosisId": "DIAG-01"
+    }
+  ],
+  "evidenceKnowledge": [
+    {
+      "evidenceId": "EV-001",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-002",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-003",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-004",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-005",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-006",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-007",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-008",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-009",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-010",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-011",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-012",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-013",
+      "knowledgeId": "KN-FAQ-002",
+      "usedVersion": "K2.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-07",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-014",
+      "knowledgeId": "KN-FAQ-002",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-07",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用时渠道仍显示旧版；版本不一致是知识问题线索，不能直接认定员工能力不足",
+      "channel": "智能客服端"
+    },
+    {
+      "evidenceId": "EV-015",
+      "knowledgeId": "KN-FAQ-002",
+      "usedVersion": "K2.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-07",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-016",
+      "knowledgeId": "KN-FAQ-002",
+      "usedVersion": "K2.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-07",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-017",
+      "knowledgeId": "KN-FAQ-002",
+      "usedVersion": "K2.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-07",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-018",
+      "knowledgeId": "KN-FAQ-002",
+      "usedVersion": "K2.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-07",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-019",
+      "knowledgeId": "KN-FAQ-002",
+      "usedVersion": "K2.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-07",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-020",
+      "knowledgeId": "KN-FAQ-002",
+      "usedVersion": "K2.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-07",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-021",
+      "knowledgeId": "KN-DOC-002",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-13",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-023",
+      "knowledgeId": "KN-DOC-002",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-13",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-024",
+      "knowledgeId": "KN-DOC-002",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-13",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-025",
+      "knowledgeId": "KN-DOC-002",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-13",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-026",
+      "knowledgeId": "KN-DOC-002",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-13",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-027",
+      "knowledgeId": "KN-DOC-002",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-13",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-034",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-035",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-036",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    },
+    {
+      "evidenceId": "EV-037",
+      "knowledgeId": "KN-FAQ-001",
+      "usedVersion": "K1.0",
+      "usedAt": "2026-08-26",
+      "taskId": "TASK-01",
+      "sourceLocator": "第1节 / 片段01（演示定位）",
+      "note": "引用记录为合成示例；采信依赖独立行为观察，非检索次数",
+      "channel": "坐席知识端"
+    }
+  ]
+}

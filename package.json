@@ -11,7 +11,7 @@
     "start": "vinext start",
     "lint": "oxlint",
     "format": "oxfmt",
-    "check": "node node_modules/typescript/bin/tsc --noEmit && node scripts/check-management.cjs && node scripts/check-workflow.cjs && node scripts/check-render.cjs && node scripts/check-foundation.mjs"
+    "check": "node node_modules/typescript/bin/tsc --noEmit && node scripts/check-management.cjs && node scripts/check-workflow.cjs && node scripts/check-render.cjs && node scripts/check-foundation.mjs && node scripts/check-reference.cjs"
   },
   "dependencies": {
     "react": "19.2.6",

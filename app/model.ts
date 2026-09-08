@@ -5,7 +5,7 @@ export type Role={id:string;name:string;domainId:string;teamNames:string[];perso
 export type Capability={id:string;name:string;category:string;definition:string;levels:{level:number;name:string;behavior:string}[];roleIds:string[]};
 export type Scenario={id:string;name:string;domainId:string;roleIds:string[];taskIds:string[];trigger:string;riskLevel:string};
 export type Task={id:string;name:string;scenarioIds:string[];capabilityIds:string[];sequence:number;input:string;action:string;output:string};
-export type TargetRequirement={id:string;roleId:string;star:number;capabilityId:string;targetLevel:number;required:boolean;thresholdType:string;scenarioIds:string[];standardVersion:string};
+export type TargetRequirement={id:string;roleId:string;star:number;capabilityId:string;targetLevel:number;required:boolean;thresholdType:string;scenarioIds:string[];standardVersion:string;behavior?:string};
 type PersonRecord=Omit<(typeof raw.people)[number],'capabilities'> & Person;
 type TaskRecord=Omit<(typeof raw.tasks)[number],'roleCapabilityMap'> & {roleCapabilityMap:Record<string,string[]>};
 export const db=raw as unknown as Omit<typeof raw,'people'|'tasks'> & {people:PersonRecord[];tasks:TaskRecord[]};
@@ -28,9 +28,11 @@ export const statusTone:Record<EvidenceStatus,string>={admissible:'green',missin
 export function personMetrics(p:Person,roleId=p.roleId,star=p.targetStars){
  const targets=targetsFor(roleId,star);let known=0,achieved=0;
  targets.forEach(t=>{const value=p.capabilities[t.capabilityId];if(value?.evidenceStatus==='admissible'&&value.level!==null){known++;if(value.level>=t.targetLevel)achieved++}});
+ const grouped=(ai:boolean)=>{const ts=targets.filter(t=>t.required&&(capById(t.capabilityId)?.category==='AI应用与协作')===ai);if(!ts.length)return '不适用';const values=ts.map(t=>{const v=p.capabilities[t.capabilityId];return !v||v.level===null||v.evidenceStatus!=='admissible'?'unknown':v.level<t.targetLevel?'gap':'passed'});return values.includes('gap')?'需提升':values.includes('unknown')?'待验证':'已满足'};
+ const businessGate=grouped(false),aiGate=grouped(true);
  const mandatory=targets.filter(t=>t.required);
  const gates=mandatory.map(t=>{const v=p.capabilities[t.capabilityId];return !v||v.level===null||v.evidenceStatus!=='admissible'?'unknown':v.level>=t.targetLevel?'passed':'gap'});
- return {total:targets.length,known,unknown:targets.length-known,achieved,unmet:known-achieved,mandatory:mandatory.length,gate:gates.includes('gap')?'存在门槛差距':gates.includes('unknown')?'门槛依据不足':'必选项已达标',score:known?Math.round(achieved/targets.length*1000)/10:null,coverage:targets.length?Math.round(known/targets.length*1000)/10:0};
+ return {businessGate,aiGate,total:targets.length,known,unknown:targets.length-known,achieved,unmet:known-achieved,mandatory:mandatory.length,gate:gates.includes('gap')?'存在门槛差距':gates.includes('unknown')?'门槛依据不足':'必选项已达标',score:known?Math.round(achieved/targets.length*1000)/10:null,coverage:targets.length?Math.round(known/targets.length*1000)/10:0};
 }
 export function roleMetrics(id:string){const records=peopleFor(id);const metrics=records.map(p=>personMetrics(p,id,3));const known=metrics.reduce((s,m)=>s+m.known,0),total=metrics.reduce((s,m)=>s+m.total,0),achieved=metrics.reduce((s,m)=>s+m.achieved,0);return {count:records.length,known,total,achieved,score:total?Math.round(achieved/total*1000)/10:0,coverage:total?Math.round(known/total*1000)/10:0,unknown:total-known,gaps:metrics.filter(m=>m.unmet>0).length}}
 export function globalMetrics(){const values=people.flatMap(p=>Object.values(p.capabilities));const valid=values.filter(v=>v.evidenceStatus==='admissible'&&v.level!==null).length;return {coverage:Math.round(valid/values.length*1000)/10,valid,total:values.length,needsEvidence:people.filter(p=>Object.values(p.capabilities).some(v=>v.evidenceStatus!=='admissible')).length}}
