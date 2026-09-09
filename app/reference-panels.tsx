@@ -1,13 +1,27 @@
 'use client';
 import {useState} from 'react';
-import {BookOpen,ArrowUpRight,Library,Layers3} from 'lucide-react';
+import {BookOpen,ArrowUpRight,Library,Layers3,ChevronDown} from 'lucide-react';
 import {foundation,profileFor} from './foundation';
 import {capById,roles} from './model';
 import {Badge,DataTable,Note,PanelTitle,Picker,SearchBox} from './ui-parts';
 import {useManagement} from './management-context';
 import type {DetailRef} from './graph-view';
 
-export function StarReference(){return <div className="foundation-scale"><div className="foundation-scale-heading"><b>统一能力对标要求</b><Badge tone="gray">图片示意 · 非职级换算</Badge></div><div className="foundation-stars">{foundation.starDefinitions.map(x=><div key={x.star}><span>{'★'.repeat(x.star)}</span><b>{x.name}</b></div>)}</div><p>一星从基础业务独立处理起步。业务能力与 AI 协作分别核验；综合星级仍须完整评审。岗位职级按修订稿另行登记，班长、支撑及运营岗位不以此处五星标尺替代一至三级职级。</p></div>}
+export function StarReference(){
+ const lineBreaks:Record<number,number>={1:4,2:4,3:4,4:3,5:4};
+ return <section className="foundation-scale foundation-scale-compact" aria-label="统一能力对标要求">
+  <div className="foundation-scale-heading"><b>统一能力对标要求</b><Badge tone="gray">图片示意 · 非职级换算</Badge></div>
+  <ol className="foundation-levels">{foundation.starDefinitions.map(x=><li key={x.star} title={x.name} aria-label={`${x.star} 星：${x.name}`}>
+   <span className="foundation-level-stars" aria-hidden="true">{'★'.repeat(x.star)}</span>
+   <b>{x.name.slice(0,lineBreaks[x.star])}</b>
+   <span className="foundation-level-description">{x.name.slice(lineBreaks[x.star])}</span>
+  </li>)}</ol>
+  <div className="foundation-scale-footer">
+   <p>业务能力与 AI 协作分别核验</p>
+   <details className="foundation-scale-notes"><summary>口径说明<ChevronDown size={14}/></summary><p>一星从基础业务独立处理起步。业务能力与 AI 协作分别核验；综合星级仍须完整评审。岗位职级按修订稿另行登记，班长、支撑及运营岗位不以此处五星标尺替代一至三级职级。</p></details>
+  </div>
+ </section>;
+}
 
 export function ReferenceStandards(){return <details className="panel reference-details"><summary>附件依据与口径说明 <span>3 份来源 · {foundation.conflicts.length} 项待确认</span></summary><Note>目录及制度条款摘自修订稿，能力族与统一对标定义来自用户图片；行为细化、人员、知识内容及业务数据是合成示例。此页不作正式晋升结论。</Note><DataTable headers={['资料','采用内容与定位','资料性质']} rows={foundation.sources.map(s=>[s.name,<span className="wrap-cell">{s.locator}</span>,<Badge tone="blue">{s.nature}</Badge>])}/><h3 className="detail-section-heading">职级规则参考</h3><DataTable headers={['规则','附件内容','来源定位']} rows={foundation.rules.map(r=>[r.title,<span className="wrap-cell">{r.text}</span>,r.locator])}/><h3 className="detail-section-heading">原文冲突与待确认项</h3><DataTable headers={['事项','待确认原因','原文位置','状态']} rows={foundation.conflicts.map(r=>[r.title,<span className="wrap-cell">{r.detail}</span>,r.locator,<Badge tone="amber">{r.status}</Badge>])}/><Note>以上修订稿规则尚未启用为原型自动评分或晋升规则；培训积分不擅自增加权重，比例表不以模拟人员总数代替岗位定员。</Note></details>}
 

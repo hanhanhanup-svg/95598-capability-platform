@@ -1,12 +1,22 @@
 'use client';
 import type { ReactNode } from 'react';
 import { ArrowRight, Search, Info, Star } from 'lucide-react';
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from '@/components/ui/select';
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem, SelectGroup, SelectLabel } from '@/components/ui/select';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table';
 import { Progress } from '@/components/ui/progress';
 
-export function Picker({label,value,onChange,options}:{label:string;value:string;onChange:(v:string)=>void;options:{value:string;label:string}[]}){return <Select value={value} onValueChange={v=>{if(v!==null)onChange(String(v))}} items={options}><SelectTrigger className="picker" aria-label={label}><SelectValue/></SelectTrigger><SelectContent>{options.map(o=><SelectItem key={o.value} value={o.value}>{o.label}</SelectItem>)}</SelectContent></Select>}
+export function Picker({label,value,onChange,options}:{label:string;value:string;onChange:(v:string)=>void;options:{value:string;label:string}[]}){
+ return <Select value={value} onValueChange={v=>{if(v!==null)onChange(String(v))}} items={options}>
+  <SelectTrigger className="picker" aria-label={label}><SelectValue/></SelectTrigger>
+  <SelectContent className="workspace-picker-popup" align="start" sideOffset={6} alignItemWithTrigger={false}>
+   <SelectGroup className="workspace-picker-group">
+    <SelectLabel className="workspace-picker-label">{label}<span>{options.length} 项</span></SelectLabel>
+    {options.map(o=><SelectItem className="workspace-picker-option" key={o.value} value={o.value}>{o.label}</SelectItem>)}
+   </SelectGroup>
+  </SelectContent>
+ </Select>;
+}
 export function Segments({value,onChange,options}:{value:string;onChange:(v:string)=>void;options:{value:string;label:string;icon?:ReactNode}[]}){return <Tabs value={value} onValueChange={v=>onChange(String(v))}><TabsList className="segmented">{options.map(o=><TabsTrigger key={o.value} value={o.value}>{o.icon}{o.label}</TabsTrigger>)}</TabsList></Tabs>}
 export function SearchBox({value,onChange,placeholder}:{value:string;onChange:(v:string)=>void;placeholder:string}){return <label className="search-box"><Search size={16}/><input value={value} onChange={e=>onChange(e.target.value)} placeholder={placeholder} aria-label={placeholder}/></label>}
 export function Badge({children,tone='green'}:{children:ReactNode;tone?:string}){return <span className={`badge ${tone}`}>{children}</span>}

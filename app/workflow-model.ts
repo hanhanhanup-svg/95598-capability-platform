@@ -14,14 +14,27 @@ export function upgradeWorkspace(input:State):State{
  // Introduce collaboration examples in a draft only, never rewrite published history.
  return s;
 }
-export const createWorkspaceState=()=>upgradeWorkspace(createInitialState());
+export function addMultiRoleSamples(input:State):State{
+ const s=structuredClone(input);if(!s.workspace||s.workspace.multiRoleSamples)return s;
+ const samples=[{personId:'DEMO-001',roleId:'ROLE-05',type:'兼岗' as const,targetStars:2},{personId:'DEMO-013',roleId:'ROLE-04',type:'支援' as const,targetStars:3}];
+ for(const sample of samples){
+  const role=s.catalog.nodes.find(n=>n.id===sample.roleId&&n.active),position=s.positions.find(p=>p.roleId===sample.roleId);
+  const hasHistory=s.assignments.some(a=>a.personId===sample.personId&&s.positions.find(p=>p.id===a.positionId)?.roleId===sample.roleId);
+  if(!role||!position||hasHistory)continue;
+  s.assignments.push({id:'ASG-MULTI-'+sample.personId,personId:sample.personId,positionId:position.id,type:sample.type,start:'2026-09-07',end:'2026-12-31',reason:'一人多岗展示案例（模拟）',targetStars:sample.targetStars});
+ }
+ const existingDemo=s.assignments.find(a=>a.id==='ASG-SUPPORT-018'&&a.personId==='DEMO-018'&&a.reason==='报修与投诉跨岗支援培养（合成）'&&s.positions.find(p=>p.id===a.positionId)?.roleId==='ROLE-03');
+ if(existingDemo&&existingDemo.targetStars===undefined)existingDemo.targetStars=3;
+ s.workspace.multiRoleSamples=true;return s;
+}
+export const createWorkspaceState=()=>addMultiRoleSamples(upgradeWorkspace(createInitialState()));
 export function decodeWorkspace(text:string):State{
  const s=JSON.parse(text) as State;
  const arrays=['orgs','positions','assignments','versions','facts','assessments','appeals','authorizations','slots','demands','allocations','unavailable','diagnoses','actions','development','audit','legacyPlans'] as const;
  if(s.schema!==2||arrays.some(k=>!Array.isArray(s[k]))||!s.versions.length||!Array.isArray(s.catalog?.nodes)||!Array.isArray(s.catalog?.edges)||!/^\d{4}-\d{2}-\d{2}$/.test(s.date))throw new Error('历史记录格式不完整');
  const people=new Set(base.people.map(p=>p.id)),positions=new Set(s.positions.map(p=>p.id));
  if(s.assignments.some(a=>!people.has(a.personId)||!positions.has(a.positionId))||s.development.some(d=>!people.has(d.personId)||!Array.isArray(d.milestones))||s.assessments.some(a=>!people.has(a.personId))||s.legacyPlans.some(p=>!people.has(p.personId))||s.versions.some(v=>!v.catalog?.nodes||!v.catalog?.edges||!Array.isArray(v.policies)))throw new Error('历史记录引用不完整');
- return upgradeWorkspace(s);
+ return addMultiRoleSamples(upgradeWorkspace(s));
 }
 export function configureDevelopment(s:State,id:string,values:{personId:string;targetRoleId:string;targetPolicyId:string;mentorId:string;months:number;wish:string;purpose:'岗位成长'|'后备培养';track:Development['track']}){
  const p=s.policies.find(p=>p.id===values.targetPolicyId&&p.roleId===values.targetRoleId);
@@ -61,13 +74,24 @@ export function developmentStatus(s:State,d:Development){
 }
 export function developmentSignature(s:State,d:Development){const p=s.policies.find(p=>p.id===d.targetPolicyId);if(!p)return '';return JSON.stringify({scenario:p.scenarioId,role:p.roleId,requirements:p.requirements,minSamples:p.minSamples,standards:p.requirements.map(r=>capabilityRevision(s,r.capabilityId)),results:p.requirements.map(r=>s.assessments.filter(a=>a.personId===d.personId&&a.scenarioId===p.scenarioId&&a.capabilityId===r.capabilityId&&a.status==='已生效'&&a.effective<=s.date).sort((a,b)=>a.effective.localeCompare(b.effective)||(a.reviewedAt||'').localeCompare(b.reviewedAt||'')).at(-1)?.id||'初始已生效结果')})}
 export function confirmDevelopment(s:State,id:string){const d=s.development.find(d=>d.id===id)!;if(developmentStatus(s,d)!=='条件满足，待确认')throw new Error('实践、训练、有效能力与证据尚未全部满足');d.status='后备就绪';d.confirmations??=[];d.confirmations.push({date:s.date,reviewer:'培养负责人（模拟）',reason:'必需实践、训练记录与目标能力逐项核验通过',signature:developmentSignature(s,d)});d.milestones.filter(m=>m.systemReview).forEach(m=>{m.done=true;m.evidence=`目标能力与有效证据已核验；评价记录 ${(d.assessmentIds||[]).join('、')||'初始已生效结果'}；${s.date}`});addAudit(s,'确认培养目标',`${d.id} / 不自动变更星级、任职或授权`)}
+export function completeImprovementAction(s:State,id:string,deliverable:string){
+ const action=s.actions.find(a=>a.id===id);
+ if(!action)throw new Error('未找到该改善事项');
+ if(action.status==='已完成')throw new Error('此事项已完成，请勿重复提交');
+ if(!['待办理','待验收'].includes(action.status))throw new Error('当前事项状态不支持办理');
+ if(!deliverable.trim())throw new Error('请填写完成情况与验证材料');
+ // Legacy pending-acceptance records use the same single verification step.
+ action.deliverable=deliverable.trim();
+ action.status='已完成';
+ addAudit(s,'验证完成改善事项',action.title);
+}
 export type Todo={id:string;title:string;category:string;actor:ViewRole;ownerId:string;ownerLabel:string;due:string;page:string;context:WorkContext;step:string};
 export function todos(s:State):Todo[]{
  const list:Todo[]=[];const push=(t:Todo)=>{const assignment=s.workspace?.todoAssignments[t.id];list.push(assignment&&assignment.stage===`${t.category}|${t.step}`?{...t,ownerId:assignment.ownerId,ownerLabel:nameOf(s,assignment.ownerId),due:assignment.due}:t)};
  s.assessments.filter(a=>a.status!=='已生效').forEach(a=>push({id:`assessment:${a.id}`,title:`${nameOf(s,a.personId)} · ${nameOf(s,a.capabilityId)}`,category:a.status==='待复核'?'评价复核':'补证与复测',actor:'评价人员',ownerId:'',ownerLabel:a.status==='待复核'?'专业复核员':'班组评价员',due:'',page:'evaluation',context:{personId:a.personId,recordId:a.id,scenarioId:a.scenarioId,capabilityId:a.capabilityId},step:a.status==='待复核'?'核验依据并作出复核结论':'补充独立事件证据并提交评价'}));
  s.appeals.filter(a=>a.status!=='已答复').forEach(a=>push({id:`appeal:${a.id}`,title:`${nameOf(s,a.personId)} · 评价异议`,category:'员工异议',actor:'评价人员',ownerId:'',ownerLabel:'质量复核员',due:'',page:'evaluation',context:{personId:a.personId,recordId:a.id,tab:'appeals'},step:a.status==='待受理'?'受理异议':'核查并答复'}));
  s.authorizations.filter(a=>a.status==='待审批').forEach(a=>push({id:`auth:${a.id}`,title:`${nameOf(s,a.personId)} · ${s.policies.find(p=>p.id===a.policyId)?.name}`,category:'场景授权',actor:'班组长',ownerId:'',ownerLabel:'场景授权主管',due:a.start,page:'authorization',context:{personId:a.personId,policyId:a.policyId,recordId:a.id},step:'逐项核验任职、证据及授权条件'}));
- s.actions.filter(a=>a.status!=='已完成').forEach(a=>push({id:`action:${a.id}`,title:a.title,category:a.category,actor:a.status==='待验收'?'管理者':'班组长',ownerId:a.status==='待验收'?'':a.ownerId,ownerLabel:a.status==='待验收'?'改善验收负责人':nameOf(s,a.ownerId),due:a.due,page:'diagnosis',context:{recordId:a.id,personId:a.ownerId,tab:'all'},step:a.status==='待验收'?'检查产出并验收':'提交改善材料'}));
+ s.actions.filter(a=>a.status!=='已完成').forEach(a=>push({id:`action:${a.id}`,title:a.title,category:a.category,actor:'班组长',ownerId:a.ownerId,ownerLabel:nameOf(s,a.ownerId),due:a.due,page:'diagnosis',context:{recordId:a.id,personId:a.ownerId,tab:'all'},step:'填写验证材料并完成'}));
  s.development.forEach(d=>{const status=developmentStatus(s,d);if(status==='培养目标已确认'||['复测待取证','评价待复核','评价退回，需补充'].includes(status))return;push({id:`development:${d.id}`,title:`${nameOf(s,d.personId)} · ${d.purpose||'岗位成长'}`,category:status,actor:status==='目标待确认'?'班组长':status==='条件满足，待确认'?'管理者':(d.resources||[]).some(r=>!r.trained)?'员工':'班组长',ownerId:status==='培养中'&&(d.resources||[]).some(r=>!r.trained)?d.personId:status==='目标待确认'||status==='条件满足，待确认'?'':d.mentorId,ownerLabel:status==='培养中'&&(d.resources||[]).some(r=>!r.trained)?nameOf(s,d.personId):status==='目标待确认'?'班组培养负责人':status==='条件满足，待确认'?'培养负责人':nameOf(s,d.mentorId),due:d.due||'',page:'talent',context:{personId:d.personId,recordId:d.id,policyId:d.targetPolicyId},step:status==='目标待确认'?'完善目标场景、导师和意愿':status==='条件满足，待确认'?'确认培养目标':'查看计划并继续办理'})});
  if(s.draft)push({id:'standard:draft',title:s.draft.note||'本次体系标准变更',category:`标准${s.draft.status}`,actor:'体系管理员',ownerId:'',ownerLabel:s.draft.status==='草稿'?'业务标准维护人':'标准审核负责人',due:s.draft.date,page:'governance',context:{tab:'release'},step:'查看差异、检查影响并办理审核发布'});
  // Evidence reminders refer to a person-capability pair; an open assessment owns that work if present.

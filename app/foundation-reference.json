@@ -708,6 +708,33 @@
       "label": "一级",
       "status": "模拟登记",
       "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-001",
+      "jobId": "JOB-15",
+      "scheme": "岗位职级",
+      "value": 1,
+      "label": "一级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-013",
+      "jobId": "JOB-13",
+      "scheme": "岗位职级",
+      "value": 1,
+      "label": "一级",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
+    },
+    {
+      "personId": "DEMO-018",
+      "jobId": "JOB-02",
+      "scheme": "服务星级",
+      "value": 2,
+      "label": "二星",
+      "status": "模拟登记",
+      "sourceId": "SRC-RANK"
     }
   ],
   "starDefinitions": [
